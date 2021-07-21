@@ -19,3 +19,8 @@
     - 프로토타입 셀의 class 를 MovieCell 로 지정
     - 셀의 요소들을 MovieCell 클래스에 아울렛 변수로 추가
     - cellForRowAt 에서 dequeueReusableCell 로 셀을 가져올 때 커스텀 클래스 가져오기
+    
+    ## API 통신
+    1. API URI를 URL 객체로 만들고
+    2. Data(contentsOf:)를 통해 GET 방식의 데이터 가져오기
+    3. JSON 데이터 파싱하기
