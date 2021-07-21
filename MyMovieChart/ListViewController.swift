@@ -35,7 +35,16 @@ class ListViewController: UITableViewController {
     }()
     
     override func viewDidLoad() {
+        // 호핀 API 호출을 위한 URI를 생성
+        let url = "http://swiftapi.rubypaper.co.kr:2029/hoppin/movies?version=1&page=1&count=10&genreId=&order=releasedateasc"
+        let apiURI: URL! = URL(string: url)
         
+        // REST API 호출
+        let apidata = try! Data(contentsOf: apiURI)
+        
+        // 데이터 전송 결과를 로그로 출력
+        let log = NSString(data: apidata, encoding: String.Encoding.utf8.rawValue) ?? ""
+        NSLog("API Result: \(log)")
     }
     
     // 테이블 행의 갯수 지정
