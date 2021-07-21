@@ -16,6 +16,9 @@
 		FB160F0E26A698D70057B5BF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB160F0D26A698D70057B5BF /* ListViewController.swift */; };
 		FB160F1026A6B9550057B5BF /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB160F0F26A6B9550057B5BF /* MovieVO.swift */; };
 		FBE20B3426A7AB8E005FDE6A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE20B3326A7AB8E005FDE6A /* MovieCell.swift */; };
+		FBE20B3926A7B196005FDE6A /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE20B3626A7B195005FDE6A /* secret.jpg */; };
+		FBE20B3A26A7B196005FDE6A /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE20B3726A7B195005FDE6A /* darknight.jpg */; };
+		FBE20B3B26A7B196005FDE6A /* rain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE20B3826A7B196005FDE6A /* rain.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		FB160F0D26A698D70057B5BF /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		FB160F0F26A6B9550057B5BF /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
 		FBE20B3326A7AB8E005FDE6A /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		FBE20B3626A7B195005FDE6A /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret.jpg; sourceTree = "<group>"; };
+		FBE20B3726A7B195005FDE6A /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darknight.jpg; sourceTree = "<group>"; };
+		FBE20B3826A7B196005FDE6A /* rain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rain.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				FB160F0B26A688700057B5BF /* README.md */,
+				FBE20B3526A7B02E005FDE6A /* Resources */,
 				FB160EF626A688070057B5BF /* MyMovieChart */,
 				FB160EF526A688070057B5BF /* Products */,
 			);
@@ -74,6 +81,16 @@
 				FBE20B3326A7AB8E005FDE6A /* MovieCell.swift */,
 			);
 			path = MyMovieChart;
+			sourceTree = "<group>";
+		};
+		FBE20B3526A7B02E005FDE6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FBE20B3726A7B195005FDE6A /* darknight.jpg */,
+				FBE20B3826A7B196005FDE6A /* rain.jpg */,
+				FBE20B3626A7B195005FDE6A /* secret.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,10 +150,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE20B3A26A7B196005FDE6A /* darknight.jpg in Resources */,
 				FB160F0426A688080057B5BF /* LaunchScreen.storyboard in Resources */,
+				FBE20B3B26A7B196005FDE6A /* rain.jpg in Resources */,
 				FB160F0126A688080057B5BF /* Assets.xcassets in Resources */,
 				FB160F0C26A688700057B5BF /* README.md in Resources */,
 				FB160EFF26A688070057B5BF /* Main.storyboard in Resources */,
+				FBE20B3926A7B196005FDE6A /* secret.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
