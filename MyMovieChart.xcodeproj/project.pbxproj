@@ -15,6 +15,7 @@
 		FB160F0C26A688700057B5BF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FB160F0B26A688700057B5BF /* README.md */; };
 		FB160F0E26A698D70057B5BF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB160F0D26A698D70057B5BF /* ListViewController.swift */; };
 		FB160F1026A6B9550057B5BF /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB160F0F26A6B9550057B5BF /* MovieVO.swift */; };
+		FBE20B3426A7AB8E005FDE6A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE20B3326A7AB8E005FDE6A /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FB160F0B26A688700057B5BF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FB160F0D26A698D70057B5BF /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		FB160F0F26A6B9550057B5BF /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
+		FBE20B3326A7AB8E005FDE6A /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				FB160F0026A688080057B5BF /* Assets.xcassets */,
 				FB160F0226A688080057B5BF /* LaunchScreen.storyboard */,
 				FB160F0526A688080057B5BF /* Info.plist */,
+				FBE20B3326A7AB8E005FDE6A /* MovieCell.swift */,
 			);
 			path = MyMovieChart;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				FB160EFC26A688070057B5BF /* ViewController.swift in Sources */,
 				FB160F1026A6B9550057B5BF /* MovieVO.swift in Sources */,
 				FB160EF826A688070057B5BF /* AppDelegate.swift in Sources */,
+				FBE20B3426A7AB8E005FDE6A /* MovieCell.swift in Sources */,
 				FB160F0E26A698D70057B5BF /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

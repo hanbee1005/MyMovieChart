@@ -21,7 +21,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="80" id="Tq3-I7-zP2">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="80" id="Tq3-I7-zP2" customClass="MovieCell" customModule="MyMovieChart" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tq3-I7-zP2" id="gJy-fP-Zaj">
@@ -58,6 +58,12 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="desc" destination="tAC-oT-GTz" id="QJp-hR-BAl"/>
+                                    <outlet property="opendate" destination="fdQ-hv-VEc" id="bxN-rX-dHS"/>
+                                    <outlet property="rating" destination="1Qy-kb-1fG" id="ZEQ-Aj-tVe"/>
+                                    <outlet property="title" destination="C7R-Yy-uYl" id="yBO-jS-gaq"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
