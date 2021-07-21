@@ -49,6 +49,7 @@ class ListViewController: UITableViewController {
         // 테이블 셀 객체를 직접 생성하는 대신 큐로부터 가져오기
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell")!
         cell.textLabel?.text = row.title
+        cell.detailTextLabel?.text = row.description
         return cell
     }
     
