@@ -37,8 +37,24 @@ class ListViewController: UITableViewController {
         
     }
     
+    // 테이블 행의 갯수 지정
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.list.count
+    }
+    
+    // 테이블 뷰의 행을 구성
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // 주어진 행에 맞는 데이터 소스를 읽어온다.
+        let row = self.list[indexPath.row]
+        // 테이블 셀 객체를 직접 생성하는 대신 큐로부터 가져오기
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell")!
+        cell.textLabel?.text = row.title
+        return cell
+    }
+    
+    // 테이블 뷰 셀이 선택된 경우
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NSLog("선택된 행은 \(indexPath.row)번째 행입니다.")
     }
     
 }
