@@ -18,6 +18,7 @@
 		FBC2901626A903FB001D8EE8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2901526A903FB001D8EE8 /* DetailViewController.swift */; };
 		FBC2901826A93CD6001D8EE8 /* TheaterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2901726A93CD6001D8EE8 /* TheaterCell.swift */; };
 		FBC2901A26A93D93001D8EE8 /* TheaterListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2901926A93D93001D8EE8 /* TheaterListController.swift */; };
+		FBC2901D26A94BEC001D8EE8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC2901C26A94BEC001D8EE8 /* MapKit.framework */; };
 		FBE20B3426A7AB8E005FDE6A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE20B3326A7AB8E005FDE6A /* MovieCell.swift */; };
 		FBE20B3926A7B196005FDE6A /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE20B3626A7B195005FDE6A /* secret.jpg */; };
 		FBE20B3A26A7B196005FDE6A /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE20B3726A7B195005FDE6A /* darknight.jpg */; };
@@ -38,6 +39,7 @@
 		FBC2901526A903FB001D8EE8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FBC2901726A93CD6001D8EE8 /* TheaterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterCell.swift; sourceTree = "<group>"; };
 		FBC2901926A93D93001D8EE8 /* TheaterListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterListController.swift; sourceTree = "<group>"; };
+		FBC2901C26A94BEC001D8EE8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FBE20B3326A7AB8E005FDE6A /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		FBE20B3626A7B195005FDE6A /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret.jpg; sourceTree = "<group>"; };
 		FBE20B3726A7B195005FDE6A /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darknight.jpg; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC2901D26A94BEC001D8EE8 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 				FBE20B3526A7B02E005FDE6A /* Resources */,
 				FB160EF626A688070057B5BF /* MyMovieChart */,
 				FB160EF526A688070057B5BF /* Products */,
+				FBC2901B26A94BEC001D8EE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +94,14 @@
 				FBE20B3326A7AB8E005FDE6A /* MovieCell.swift */,
 			);
 			path = MyMovieChart;
+			sourceTree = "<group>";
+		};
+		FBC2901B26A94BEC001D8EE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBC2901C26A94BEC001D8EE8 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FBE20B3526A7B02E005FDE6A /* Resources */ = {
