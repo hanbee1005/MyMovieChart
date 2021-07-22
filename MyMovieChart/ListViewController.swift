@@ -91,6 +91,22 @@ class ListViewController: UITableViewController {
         }
     }
     
+    func getThumnailImage(_ index: Int) -> UIImage {
+        // 인자값으로 받은 인덱스를 기반으로 해당하는 배열 데이터를 읽어옴
+        let mvo = self.list[index]
+        
+        // 메모이제이션: 저장된 이미지가 있으면 그것을 반환하고, 없을 경우 내려받아 저장한 후 반환
+        if let savedImage = mvo.thumnailImage {
+            return savedImage
+        } else {
+            let url: URL! = URL(string: mvo.thumbnail!)
+            let imageData = try! Data(contentsOf: url)
+            mvo.thumnailImage = UIImage(data: imageData)  // UIImage를 MovieVO 객체에 우선 저장
+            
+            return mvo.thumnailImage! // 저장된 이미지를 반환
+        }
+    }
+    
     // 테이블 행의 갯수 지정
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.list.count
@@ -109,8 +125,10 @@ class ListViewController: UITableViewController {
         cell.opendate?.text = row.opendate
         cell.rating?.text = "\(row.rating!)"
         
-        // 이미지 객체를 대입
-        cell.thumnail.image = row.thumnailImage
+        // 비동기 방식으로 썸네일 이미지를 읽어옴
+        DispatchQueue.main.async(execute: {
+            cell.thumnail.image = self.getThumnailImage(indexPath.row)
+        })
         
         return cell
     }
