@@ -19,11 +19,31 @@ class DetailViewController: UIViewController {
         let navibar = self.navigationItem
         navibar.title = self.mvo.title
         
-        // URLRequest 인스턴스를 생성
-        let url = URL(string: self.mvo.detail!)
-        let req = URLRequest(url: url!)
-        
-        // loadRequest 메소드를 호출하면서 req를 인자값으로 전달
-        self.wv.load(req)
+        if let url = self.mvo?.detail {
+            if let urlObj = URL(string: url) {
+                let req = URLRequest(url: urlObj)
+                self.wv.load(req)
+            } else {  // URL 형식이 잘못되었을 경우에 대한 예외처리
+                // 경고창 형식으로 오류 메시지를 표시
+                let alert = UIAlertController(title: "오류", message: "잘못된 URL입니다.", preferredStyle: .alert)
+                let cancelAction = UIAlertAction(title: "확인", style: .cancel) { (_) in
+                    // 이전 페이지로 되돌려보낸다.
+                    _ = self.navigationController?.popViewController(animated: true)
+                }
+                
+                alert.addAction(cancelAction)
+                self.present(alert, animated: false, completion: nil)
+            }
+        } else {  // URL 값이 전달되지 않았을 경우에 대한 예외처리
+            // 경고창 형식으로 오류 메시지를 표시
+            let alert = UIAlertController(title: "오류", message: "필수 파라미터가 누락되었습니다.", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "확인", style: .cancel) { (_) in
+                // 이전 페이지로 돌려보낸다.
+                _ = self.navigationController?.popViewController(animated: true)
+            }
+            
+            alert.addAction(cancelAction)
+            self.present(alert, animated: false, completion: nil)
+        }
     }
 }
