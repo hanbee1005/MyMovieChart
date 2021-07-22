@@ -24,3 +24,8 @@
 1. API URI를 URL 객체로 만들고
 2. Data(contentsOf:)를 통해 GET 방식의 데이터 가져오기
 3. JSON 데이터 파싱하기
+
+## MapKit 사용
+1. MapKit Framework 추가
+2. ViewController 추가 후 MapKitView를 추가하고 import MapKit 설정
+3. 

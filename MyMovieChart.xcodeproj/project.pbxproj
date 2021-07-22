@@ -19,6 +19,7 @@
 		FBC2901826A93CD6001D8EE8 /* TheaterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2901726A93CD6001D8EE8 /* TheaterCell.swift */; };
 		FBC2901A26A93D93001D8EE8 /* TheaterListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2901926A93D93001D8EE8 /* TheaterListController.swift */; };
 		FBC2901D26A94BEC001D8EE8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC2901C26A94BEC001D8EE8 /* MapKit.framework */; };
+		FBC2901F26A94CA6001D8EE8 /* TheaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2901E26A94CA6001D8EE8 /* TheaterViewController.swift */; };
 		FBE20B3426A7AB8E005FDE6A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE20B3326A7AB8E005FDE6A /* MovieCell.swift */; };
 		FBE20B3926A7B196005FDE6A /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE20B3626A7B195005FDE6A /* secret.jpg */; };
 		FBE20B3A26A7B196005FDE6A /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE20B3726A7B195005FDE6A /* darknight.jpg */; };
@@ -40,6 +41,7 @@
 		FBC2901726A93CD6001D8EE8 /* TheaterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterCell.swift; sourceTree = "<group>"; };
 		FBC2901926A93D93001D8EE8 /* TheaterListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterListController.swift; sourceTree = "<group>"; };
 		FBC2901C26A94BEC001D8EE8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FBC2901E26A94CA6001D8EE8 /* TheaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterViewController.swift; sourceTree = "<group>"; };
 		FBE20B3326A7AB8E005FDE6A /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		FBE20B3626A7B195005FDE6A /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret.jpg; sourceTree = "<group>"; };
 		FBE20B3726A7B195005FDE6A /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darknight.jpg; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				FB160EFB26A688070057B5BF /* ViewController.swift */,
 				FB160F0D26A698D70057B5BF /* ListViewController.swift */,
 				FB160EFD26A688070057B5BF /* Main.storyboard */,
+				FBC2901E26A94CA6001D8EE8 /* TheaterViewController.swift */,
 				FBC2901726A93CD6001D8EE8 /* TheaterCell.swift */,
 				FBC2901926A93D93001D8EE8 /* TheaterListController.swift */,
 				FBC2901526A903FB001D8EE8 /* DetailViewController.swift */,
@@ -194,6 +197,7 @@
 				FBC2901A26A93D93001D8EE8 /* TheaterListController.swift in Sources */,
 				FB160EF826A688070057B5BF /* AppDelegate.swift in Sources */,
 				FBC2901626A903FB001D8EE8 /* DetailViewController.swift in Sources */,
+				FBC2901F26A94CA6001D8EE8 /* TheaterViewController.swift in Sources */,
 				FBE20B3426A7AB8E005FDE6A /* MovieCell.swift in Sources */,
 				FB160F0E26A698D70057B5BF /* ListViewController.swift in Sources */,
 			);
