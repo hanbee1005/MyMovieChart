@@ -195,6 +195,7 @@
                                     <outlet property="addr" destination="ge2-Ul-wRm" id="AbW-XM-Qsi"/>
                                     <outlet property="name" destination="vdK-8Z-VEO" id="IgU-48-nSY"/>
                                     <outlet property="tel" destination="PqD-iq-kJi" id="Iy1-x4-685"/>
+                                    <segue destination="hY7-jT-zdA" kind="show" identifier="segue_map" id="5EY-CE-5uA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -209,7 +210,7 @@
             </objects>
             <point key="canvasLocation" x="1448.8" y="868.51574212893559"/>
         </scene>
-        <!--Theater View Controller-->
+        <!--Title-->
         <scene sceneID="Efx-ld-JH4">
             <objects>
                 <viewController id="hY7-jT-zdA" customClass="TheaterViewController" customModule="MyMovieChart" customModuleProvider="target" sceneMemberID="viewController">
@@ -225,6 +226,7 @@
                         <viewLayoutGuide key="safeArea" id="6Bf-6r-COp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="mQM-6i-CYj"/>
                     <connections>
                         <outlet property="map" destination="pzP-QH-pee" id="aMm-8Y-foK"/>
                     </connections>

@@ -28,4 +28,7 @@
 ## MapKit 사용
 1. MapKit Framework 추가
 2. ViewController 추가 후 MapKitView를 추가하고 import MapKit 설정
-3. 
+3. 위도, 경도 정보를 바탕으로 CLLocationCoordinate2D 객체 생성
+4. 맵에 표현될 지역의 너비를 CLLocationDistance 객체를 이용하여 설정
+5. 위도와 경도를 이용하여 정의한 중심 위치와 거리값을 조합하여 맵 뷰에 전달될 MKCoordinateRegion(center:latitudinalMeters:longitudinalMeters:) 생성
+6. setRegion() 메소드를 통해 전달
