@@ -32,3 +32,4 @@
 4. 맵에 표현될 지역의 너비를 CLLocationDistance 객체를 이용하여 설정
 5. 위도와 경도를 이용하여 정의한 중심 위치와 거리값을 조합하여 맵 뷰에 전달될 MKCoordinateRegion(center:latitudinalMeters:longitudinalMeters:) 생성
 6. setRegion() 메소드를 통해 전달
+7. 지도 위에 특정 위치를 표시하고 싶다면, MKPointAnnotation 객체를 생성하고 coordinate 속성을 설정한 뒤 지도에 추가

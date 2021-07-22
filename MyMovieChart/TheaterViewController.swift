@@ -32,5 +32,12 @@ class TheaterViewController: UIViewController {
         
         // map 변수에 연결된 지도 객체에 데이터를 전달하여 화면에 표시
         self.map.setRegion(coordinateRegion, animated: true)
+        
+        // 위치를 표시해줄 객체를 생성하고, 앞에서 작성해준 위치값 객체를 할당
+        let point = MKPointAnnotation()
+        point.coordinate = location
+        
+        // 위치 표현값을 추가
+        self.map.addAnnotation(point)
     }
 }
