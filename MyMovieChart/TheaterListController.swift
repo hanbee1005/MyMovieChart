@@ -22,7 +22,7 @@ class TheaterListController: UITableViewController {
     // API로부터 극장 정보를 읽어오는 메소드
     func callTheaterAPI() {
         // URL을 구성하기 위한 상수값을 선언
-        let requestURI = "http://swiftapi.rubypaper.co.kr: 2029/theater/list" // API 요청 주소
+        let requestURI = "http://swiftapi.rubypaper.co.kr:2029/theater/list" // API 요청 주소
         let sList = 100 // 불러올 데이터 갯수
         let type = "json" // 데이터 형식
         
@@ -59,5 +59,23 @@ class TheaterListController: UITableViewController {
             alert.addAction(UIAlertAction(title: "확인", style: .cancel, handler: nil))
             self.present(alert, animated: false, completion: nil)
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.list.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // self.list 배열에서 행에 맞는 데이터를 꺼냄
+        let obj = self.list[indexPath.row]
+        
+        // 재사용 큐로부터 tCell 식별자에 맞는 셀 객체를 전달받음
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tCell") as! TheaterCell
+        
+        cell.name?.text = obj["상영관명"] as? String
+        cell.tel?.text = obj["연락처"] as? String
+        cell.addr?.text = obj["소재지도로명주소"] as? String
+        
+        return cell
     }
 }
