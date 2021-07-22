@@ -16,6 +16,7 @@
 		FB160F0E26A698D70057B5BF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB160F0D26A698D70057B5BF /* ListViewController.swift */; };
 		FB160F1026A6B9550057B5BF /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB160F0F26A6B9550057B5BF /* MovieVO.swift */; };
 		FBC2901626A903FB001D8EE8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2901526A903FB001D8EE8 /* DetailViewController.swift */; };
+		FBC2901826A93CD6001D8EE8 /* TheaterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2901726A93CD6001D8EE8 /* TheaterCell.swift */; };
 		FBE20B3426A7AB8E005FDE6A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE20B3326A7AB8E005FDE6A /* MovieCell.swift */; };
 		FBE20B3926A7B196005FDE6A /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE20B3626A7B195005FDE6A /* secret.jpg */; };
 		FBE20B3A26A7B196005FDE6A /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE20B3726A7B195005FDE6A /* darknight.jpg */; };
@@ -34,6 +35,7 @@
 		FB160F0D26A698D70057B5BF /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		FB160F0F26A6B9550057B5BF /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
 		FBC2901526A903FB001D8EE8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FBC2901726A93CD6001D8EE8 /* TheaterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterCell.swift; sourceTree = "<group>"; };
 		FBE20B3326A7AB8E005FDE6A /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		FBE20B3626A7B195005FDE6A /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret.jpg; sourceTree = "<group>"; };
 		FBE20B3726A7B195005FDE6A /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darknight.jpg; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				FB160EFB26A688070057B5BF /* ViewController.swift */,
 				FB160F0D26A698D70057B5BF /* ListViewController.swift */,
 				FB160EFD26A688070057B5BF /* Main.storyboard */,
+				FBC2901726A93CD6001D8EE8 /* TheaterCell.swift */,
 				FBC2901526A903FB001D8EE8 /* DetailViewController.swift */,
 				FB160F0F26A6B9550057B5BF /* MovieVO.swift */,
 				FB160F0026A688080057B5BF /* Assets.xcassets */,
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB160EFC26A688070057B5BF /* ViewController.swift in Sources */,
+				FBC2901826A93CD6001D8EE8 /* TheaterCell.swift in Sources */,
 				FB160F1026A6B9550057B5BF /* MovieVO.swift in Sources */,
 				FB160EF826A688070057B5BF /* AppDelegate.swift in Sources */,
 				FBC2901626A903FB001D8EE8 /* DetailViewController.swift in Sources */,
