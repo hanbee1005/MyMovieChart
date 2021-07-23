@@ -134,9 +134,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3j8-mU-d6T">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3j8-mU-d6T">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -151,6 +150,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w4i-ep-CnX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w4i-ep-CnX" firstAttribute="trailing" secondItem="3j8-mU-d6T" secondAttribute="trailing" id="EJF-qo-Dlv"/>
+                            <constraint firstItem="3j8-mU-d6T" firstAttribute="bottom" secondItem="w4i-ep-CnX" secondAttribute="bottom" constant="49" id="IFU-l1-aZ6"/>
+                            <constraint firstItem="3j8-mU-d6T" firstAttribute="leading" secondItem="w4i-ep-CnX" secondAttribute="leading" id="UTR-oM-5uK"/>
+                            <constraint firstItem="w4i-ep-CnX" firstAttribute="top" secondItem="3j8-mU-d6T" secondAttribute="top" constant="44" id="ugO-Ho-k5b"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="F71-Fh-ELr"/>
                     <connections>
